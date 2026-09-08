@@ -4,9 +4,9 @@
 
 **Intelligent text truncation, word-aware.**
 
-![npm version](https://img.shields.io/npm/v/truncatex?style=flat-square&logo=npm&label=npm&color=6366f1)
-![npm downloads](https://img.shields.io/npm/dm/truncatex?style=flat-square&logo=npm&label=downloads&color=8b5cf6)
-![bundle size](https://img.shields.io/bundlephobia/minzip/truncatex?style=flat-square&label=minzip&color=f472b6)
+![npm version](https://img.shields.io/npm/v/@knownasrazi/truncatex?style=flat-square&logo=npm&label=npm&color=6366f1)
+![npm downloads](https://img.shields.io/npm/dm/@knownasrazi/truncatex?style=flat-square&logo=npm&label=downloads&color=8b5cf6)
+![bundle size](https://img.shields.io/bundlephobia/minzip/@knownasrazi/truncatex?style=flat-square&label=minzip&color=f472b6)
 ![license](https://img.shields.io/github/license/knownasrazi/truncatex?style=flat-square&color=22d3ee)
 [![CI](https://img.shields.io/github/actions/workflow/status/knownasrazi/truncatex/ci.yml?style=flat-square&label=CI)](https://github.com/knownasrazi/truncatex/actions)
 
@@ -28,14 +28,14 @@ Cuts text cleanly — no mid-word carnage, no off-by-one ellipsis bugs.
 ## Install
 
 ```bash
-bun add truncatex    # or
-npm install truncatex
+bun add @knownasrazi/truncatex    # or
+npm install @knownasrazi/truncatex
 ```
 
 ## Usage
 
 ```ts
-import { truncate, truncateWords } from "truncatex";
+import { truncate, truncateWords } from "@knownasrazi/truncatex";
 
 truncate("hello world", 8); // "hello..."
 truncate("hello world foo bar", { length: 12, wordBoundary: true }); // "hello..."

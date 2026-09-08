@@ -1,55 +1,55 @@
-{
-  "name": "truncatex",
-  "version": "1.0.0",
-  "description": "Intelligent text truncation with ellipsis, word-boundary awareness, and custom limits.",
-  "keywords": [
-    "truncate",
-    "ellipsis",
-    "text",
-    "string",
-    "wrap"
-  ],
-  "license": "MIT",
-  "author": {
-    "name": "Razi",
-    "url": "https://github.com/knownasrazi"
-  },
-  "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.cjs"
-      }
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "engines": {
-    "node": ">=18",
-    "bun": ">=1.0"
-  },
-  "sideEffects": false,
-  "scripts": {
-    "build": "tsup",
-    "test": "bun test",
-    "typecheck": "tsc --noEmit",
-    "lint": "biome check --diagnostic-level=warn .",
-    "format": "biome format --write .",
-    "release": "bun run lint && bun run typecheck && bun run build && bun test"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.5.7",
-    "@types/bun": "^1.2.0",
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.0"
-  }
+﻿{
+    "name":  "@knownasrazi/truncatex",
+    "version":  "1.0.0",
+    "description":  "Intelligent text truncation with ellipsis, word-boundary awareness, and custom limits.",
+    "keywords":  [
+                     "truncate",
+                     "ellipsis",
+                     "text",
+                     "string",
+                     "wrap"
+                 ],
+    "license":  "MIT",
+    "author":  {
+                   "name":  "Razi",
+                   "url":  "https://github.com/knownasrazi"
+               },
+    "type":  "module",
+    "main":  "./dist/index.cjs",
+    "module":  "./dist/index.js",
+    "types":  "./dist/index.d.ts",
+    "exports":  {
+                    ".":  {
+                              "import":  {
+                                             "types":  "./dist/index.d.ts",
+                                             "default":  "./dist/index.js"
+                                         },
+                              "require":  {
+                                              "types":  "./dist/index.d.ts",
+                                              "default":  "./dist/index.cjs"
+                                          }
+                          }
+                },
+    "files":  [
+                  "dist"
+              ],
+    "engines":  {
+                    "node":  "\u003e=18",
+                    "bun":  "\u003e=1.0"
+                },
+    "sideEffects":  false,
+    "scripts":  {
+                    "build":  "tsup",
+                    "test":  "bun test",
+                    "typecheck":  "tsc --noEmit",
+                    "lint":  "biome check --diagnostic-level=warn .",
+                    "format":  "biome format --write .",
+                    "release":  "bun run lint \u0026\u0026 bun run typecheck \u0026\u0026 bun run build \u0026\u0026 bun test"
+                },
+    "devDependencies":  {
+                            "@biomejs/biome":  "^2.5.7",
+                            "@types/bun":  "^1.2.0",
+                            "tsup":  "^8.5.1",
+                            "typescript":  "^5.9.0"
+                        }
 }
