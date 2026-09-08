@@ -1,0 +1,14 @@
+﻿* text=auto
+
+*.ts text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.sh text eol=lf
+*.gitignore text eol=lf
+LICENSE text eol=lf
